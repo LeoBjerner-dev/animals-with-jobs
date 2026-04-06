@@ -3,11 +3,11 @@
 //Varje list-item ska ha en event-lyssnare som kallar på "renderAnimalInfo"
 //Typa upp funktionens parameter
 
-import { IAnimal } from "./IAnimal";
-import renderAnimalInfo from "./renderAnimalInfo";
+import { IAnimal } from "./IAnimal.ts";
+import renderAnimalInfo from "./renderAnimalInfo.ts";
 
 export default function renderListOfAnimals(animals: IAnimal[]) {
-  const animalList = document.querySelector(".list-of-animals");
+  const animalList = document.querySelector(".list-of-animals ul");
 
   animals.forEach((animal) => {
     const listItem = document.createElement("li");
