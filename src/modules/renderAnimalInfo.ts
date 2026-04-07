@@ -15,7 +15,7 @@ export default function renderAnimalInfo(animal: IAnimal) {
   //Skriv ut djurets namn och typ av djur. Följ det här formatet: "Gina the Giraffe"
   //=====================================================//
   const animalImg = document.createElement("img");
-  animalImg.src = animal.imageUrl;
+  animalImg.src = `images/${animal.imageUrl}`;
   animalInfoBox?.appendChild(animalImg);
 
   const nameText = document.createElement("p");
