@@ -7,8 +7,8 @@ export default function renderAnimalInfo(animal: IAnimal) {
   const animalInfoBox = document.querySelector(".animal-info");
 
   if (animalInfoBox) {
-  animalInfoBox.innerHTML = ""; // JAG ANVÄNDER DEN HÄR FÖR ATT RENSA SÅ ATT DET INTE BLIR DJUR PÅ DJUR
-}
+    animalInfoBox.innerHTML = ""; // JAG ANVÄNDER DEN HÄR FÖR ATT RENSA SÅ ATT DET INTE BLIR DJUR PÅ DJUR
+  }
 
   //=====================================================//
   //Rendera ut bilden på djuret
@@ -18,7 +18,7 @@ export default function renderAnimalInfo(animal: IAnimal) {
   animalImg.src = `images/${animal.imageUrl}`;
   animalInfoBox?.appendChild(animalImg);
 
-  const nameText = document.createElement("p");
+  const nameText = document.createElement("h3");
   nameText.textContent = `${animal.name} the ${animal.kindOfAnimal}`;
   animalInfoBox?.appendChild(nameText);
 

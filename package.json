@@ -5,13 +5,16 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "watch": "tsc -w"
+    "watch": "tsc -w",
+    "sass": "sass src/styles.scss styles.css",
+    "sass:watch": "sass --watch src/styles.scss styles.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "sass": "^1.99.0",
     "typescript": "^5.9.3"
   }
 }

@@ -12,7 +12,7 @@ export default function renderAnimalInfo(animal) {
     const animalImg = document.createElement("img");
     animalImg.src = `images/${animal.imageUrl}`;
     animalInfoBox?.appendChild(animalImg);
-    const nameText = document.createElement("p");
+    const nameText = document.createElement("h3");
     nameText.textContent = `${animal.name} the ${animal.kindOfAnimal}`;
     animalInfoBox?.appendChild(nameText);
     //=====================================================//
