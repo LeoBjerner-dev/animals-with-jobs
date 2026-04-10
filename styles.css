@@ -31,6 +31,9 @@ body {
   border: 8px solid white;
   border-radius: 50%;
 }
+.animal-info li {
+  list-style: none;
+}
 
 body {
   background-color: rgb(204, 204, 204);

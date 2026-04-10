@@ -59,6 +59,10 @@ export default function renderAnimalInfo(animal: IAnimal) {
   //Bonus om du skriver ut rubriken "Skills" med CSS.
   //=====================================================//
 
+  const skillsTitle = document.createElement("p");
+  skillsTitle.textContent = "Skills:";
+  animalInfoBox?.appendChild(skillsTitle);
+
   const skillsText = document.createElement("ul");
   const skillList = animal.skills;
 
